@@ -277,7 +277,7 @@ BrakePoint
 }
 .ginger__section .ginger__box-txt {
   height: 10rem;
-  padding: 17px 23px 21px 23px;
+  padding: 1.7rem 2.3rem 2.1rem 2.3rem;
   font-size: 2rem;
 }
 @media screen and (max-width: 600px) {
@@ -327,55 +327,55 @@ BrakePoint
     height: auto;
   }
 }
-.ginger__section .ginger__img-txt {
+.ginger__section .ginger__text {
   width: 59rem;
   height: 59rem;
 }
 @media screen and (max-width: 600px) {
-  .ginger__section .ginger__img-txt {
+  .ginger__section .ginger__text {
     max-width: 590px;
     width: 100%;
     height: 590px;
   }
 }
-.ginger__section .ginger__img-txt .planning {
+.ginger__section .ginger__text .planning {
   height: auto;
   border: 1px solid #000;
   height: 25.4rem;
 }
 @media screen and (max-width: 600px) {
-  .ginger__section .ginger__img-txt .planning {
+  .ginger__section .ginger__text .planning {
     height: 180px;
   }
 }
-.ginger__section .ginger__img-text {
+.ginger__section .ginger__text-txt {
   padding: 2.5rem 0;
   font-size: 1.6rem;
   height: auto;
 }
 @media screen and (max-width: 600px) {
-  .ginger__section .ginger__img-text {
+  .ginger__section .ginger__text-txt {
     font-size: 16px;
   }
 }
-.ginger__section .ginger__img-ttl {
+.ginger__section .ginger__text-ttl {
   height: 7rem;
   line-height: 7rem;
   margin-right: 2rem;
   border-bottom: 1px solid #000;
 }
 @media screen and (max-width: 600px) {
-  .ginger__section .ginger__img-ttl {
+  .ginger__section .ginger__text-ttl {
     height: 70px;
     line-height: 70px;
     border-bottom: 0px solid #000;
   }
 }
-.ginger__section .ginger__img-ttl h2 {
+.ginger__section .ginger__text-ttl h2 {
   font-size: 3rem;
 }
 @media screen and (max-width: 600px) {
-  .ginger__section .ginger__img-ttl h2 {
+  .ginger__section .ginger__text-ttl h2 {
     font-size: 20px;
     text-align: center;
   }
@@ -425,7 +425,7 @@ BrakePoint
   margin: 3.4rem 5rem 3.4rem;
   font-size: 1.6rem;
 }
-.ginger__footer-btn {
+.ginger__footer-sec-btn {
   display: flex;
   background-color: #C19632;
   justify-content: space-between;
@@ -433,18 +433,18 @@ BrakePoint
   width: 81.9rem;
   margin-top: 4.6rem;
 }
-.ginger__footer-btn-txt {
+.ginger__footer-sec-btn-txt {
   height: 8.7rem;
   margin-left: 5rem;
 }
-.ginger__footer-btn-txt h3 {
+.ginger__footer-sec-btn-txt h3 {
   font-size: 3rem;
 }
-.ginger__footer-btn-txt p {
+.ginger__footer-sec-btn-txt p {
   margin: 0px;
   font-size: 1.6rem;
 }
-.ginger__footer-btn button {
+.ginger__footer-sec-btn button {
   border-radius: 3rem;
   background-color: #C19632;
   border: 1px solid #fff;
@@ -453,13 +453,13 @@ BrakePoint
   color: #fff;
   margin-right: 1.4rem;
 }
-.ginger__footer-img {
+.ginger__footer-sec-img {
   display: flex;
   justify-content: flex-start;
   gap: 1.6rem;
   margin-left: 5rem;
 }
-.ginger__footer-img img {
+.ginger__footer-sec-img img {
   width: 24.4rem;
   height: 22rem;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
@@ -528,7 +528,7 @@ BrakePoint
   align-items: center;
   margin-top: -3rem;
 }
-.ginger__flex-p {
+.ginger__flex-txt {
   margin-left: 6.2rem;
   font-size: 1.6rem;
 }
