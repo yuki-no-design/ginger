@@ -31,7 +31,7 @@
 }
 
 .buyer__section{
-  &-p{
+  &-txt{
       text-align: center;
       margin: 6rem 0;
       font-size: 1.6rem;
@@ -39,7 +39,7 @@
           font-size: 14px;
       }
   }
-  &-h2{
+  &-ttl{
       margin: 4.4rem auto;
       font-size: 3rem;
       font-weight: 600;
@@ -60,23 +60,23 @@
 
       }
   }
-
+  &-txt{
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.6rem;
+    @media screen and (max-width: 600px) {
+        font-size: 13px;
+    }
+}
   &-content{
       display: flex;
       justify-content: space-between;
-      &-p{
-          text-align: center;
-          margin-bottom: 2rem;
-          font-size: 1.6rem;
-          @media screen and (max-width: 600px) {
-              font-size: 13px;
-          }
-      }
+
       img{
           width: 40.8rem;
           height: auto;    
       }
-      &-name{
+      &-buyer{
           padding: 0 40px;
           @media screen and (max-width: 600px) {
               padding: 0;
@@ -109,49 +109,49 @@
       @media screen and (max-width: 600px) {
           flex-direction: column;
       }
+      &-box{
+        width: 38.2rem;
+        height: auto;
+        @media screen and (max-width: 600px) {
+            width: 100%;
+        }
+        img{
+            width: 38.2rem;
+            height: auto;
+            @media screen and (max-width: 600px) {
+                width: 100%;
+            }
+        }
+        h3{
+            text-align: center;
+            margin: 2.8rem 0;
+            font-size: 3rem;
+            @media screen and (max-width: 600px) {
+                font-size: 14px;
+                text-align: start;
+            }
+        }
+        p{
+            padding: 0;
+        }
+    }
   }
-  &-box{
-      width: 38.2rem;
-      height: auto;
-      @media screen and (max-width: 600px) {
-          width: 100%;
-      }
-      img{
-          width: 38.2rem;
-          height: auto;
-          @media screen and (max-width: 600px) {
-              width: 100%;
-          }
-      }
-      h3{
-          text-align: center;
-          margin: 2.8rem 0;
-          font-size: 3rem;
-          @media screen and (max-width: 600px) {
-              font-size: 14px;
-              text-align: start;
-          }
-      }
-      p{
-          padding: 0;
-      }
-  }
-  .samplelink{
-      text-align: center;
-      button{
-          width: 23rem;
-          height: 5.5rem;
-          border-radius: 3rem;
-          background-color: #fff;
-          font-size: 1.6rem;
-          @media screen and (max-width: 600px) {
-              width: 174px;
-              height: 50px;
-              font-size: 16px;
-              border-radius: 30px;
-          }
-      }
-  }
+  &-samplelink{
+    text-align: center;
+    button{
+        width: 23rem;
+        height: 5.5rem;
+        border-radius: 3rem;
+        background-color: #fff;
+        font-size: 1.6rem;
+        @media screen and (max-width: 600px) {
+            width: 174px;
+            height: 50px;
+            font-size: 16px;
+            border-radius: 30px;
+        }
+    }
+}
 }
 
 .buyer__content{
