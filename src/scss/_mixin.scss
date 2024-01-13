@@ -1,0 +1,63 @@
+@use "config/variables" as v;
+/*---------------------------------------------------------
+BrakePoint
+----------------------------------------------------------*/
+@mixin pc-wide {
+  @media (max-width: (v.$pc-wide)) {
+    @content;
+  }
+}
+
+@mixin pc {
+  @media (max-width: (v.$pc)) {
+    @content;
+  }
+}
+
+@mixin pc-small {
+  @media (max-width: (v.$pc-small)) {
+    @content;
+  }
+}
+
+@mixin pc-small02 {
+  @media (max-width: (v.$pc-small)) {
+    @content;
+  }
+}
+
+@mixin pc-small-np {
+  @media (max-width: (v.$pc-small-np)) {
+    @content;
+  }
+}
+
+@mixin nav-sub {
+  @media (max-width: (v.$nav-sub)) {
+    @content;
+  }
+}
+
+@mixin tablet-big {
+  @media (max-width: (v.$tablet-big)) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: (v.$tablet)) {
+    @content;
+  }
+}
+
+@mixin sp {
+  @media (max-width: (v.$sp)) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: (v.$mobile)) {
+    @content;
+  }
+}

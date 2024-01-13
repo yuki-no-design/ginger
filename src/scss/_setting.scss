@@ -1,0 +1,22 @@
+/*---------------------------------------------------------
+Clamp
+----------------------------------------------------------*/
+*,
+*::before,
+*::after {
+  --min-size: 12px;
+  --max-size: 160px;
+  --min-viewport: 375;
+  --max-viewport: 1280;
+  --slope: calc(
+    (var(--max-size) - var(--min-size)) /
+      (var(--max-viewport) - var(--min-viewport))
+  );
+  --intercept: calc(var(--min-size) - var(--slope) * var(--min-viewport));
+  --fluid-size: calc(var(--slope) * 100vw + var(--intercept) / 16 * 1rem);
+  --clamp-size: clamp(
+    var(--min-size) / 16 * 1rem,
+    var(--fluid-size),
+    var(--max-size) / 16 * 1rem
+  );
+}

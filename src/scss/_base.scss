@@ -1,0 +1,75 @@
+@use "mixin" as mixin;
+@use "config/variables" as variables;
+
+html {
+  scroll-behavior: smooth;
+  overscroll-behavior: none;
+}
+
+body {
+  font-family: Georgia, "游ゴシック", YuGothic, "Yu Gothic Medium", 
+  "Yu Gothic", Verdana, Meiryo, sans-serif;
+  line-height: 1.75;
+  --min-size: 14;
+  --max-size: 14;
+  font-size: var(--clamp-size);
+  color: #333333;
+  &.open-toggle {
+    height: 100%;
+    overflow: hidden;
+  }
+}
+
+main {
+  &.sub-page {
+    padding-top:80px;
+    @include mixin.nav-sub {
+      padding-top:60px;
+    }
+  }
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+.background__cover {
+  &.open-toggle {
+  position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 101;
+	background: rgba(3,3,3,.5);
+	display: block;
+  }
+}
+
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+  scroll-padding-top: 2rem;
+  //sp
+  @media (max-width: 1000px) {
+      // viewport 768px のとき font-size 16px
+      font-size: calc(100vw * 5.5 / 767);
+  }
+
+  @media (max-width: 600px) {
+      // viewport 768px のとき font-size 16px
+      font-size: calc(100vw * 6 / 600);
+  }
+
+  @media (min-width: 1001px) {
+      // viewport 1240px のとき font-size 18px
+      font-size: calc(100vw * 6 / 1240);
+  }
+
+  @media (min-width: 1440px) {
+      // viewport 1440px のとき font-size 20px
+      font-size: calc(100vw * 6.5 / 1440);
+  }
+}
